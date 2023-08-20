@@ -44,3 +44,44 @@ example '-webkit-tansition: 1s all;'
 #### Favicon
 
 [Сервис для создания favicon](https://pr-cy.ru/favicon/)
+
+#### Gulp
+
+1. скачать Nodejs (set npm package)
+
+1.1. [NPMjs](https://www.npmjs.com/)
+
+2. npm initial (get package.json)
+
+3. [Get started Gulp](https://gulpjs.com/)
+
+4. `npm install --global gulp-cli`
+
+5. `npm install --save-dev gulp-cli`
+
+6. `npm install --save-dev gulp sudo`
+
+###### Базовые пакеты для установки
+
+- sudo добавляется, где требуются права администратора
+
+- `npm i gulp-sass --save-dev`
+
+- `npm install --save-dev browser-sync`
+
+- `npm i gulp-autoprefixer --save-dev`
+
+- `npm i gulp-clean-css --save-dev`
+
+- `npm i gulp-sourcemaps --save-dev`
+
+-  `npm i sass --save-dev`
+
+- `npm i gulp-rename --save-dev`
+
+
+##### Cli Gulp
+
+- `gulp` - запуск сервера
+
+- `^C` - остановка сервера (ctr + C)
