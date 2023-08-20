@@ -85,3 +85,10 @@ example '-webkit-tansition: 1s all;'
 - `gulp` - запуск сервера
 
 - `^C` - остановка сервера (ctr + C)
+
+- `npm i` - установка пакетов с файлов package-lock.json package.json
+
+
+##### БЭМ Документация
+
+[БЭМ документация](https://ru.bem.info)
