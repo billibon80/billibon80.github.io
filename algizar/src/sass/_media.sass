@@ -147,6 +147,9 @@
         &-visible 
             display: block
     .subheader
+        &_logo
+            img
+                max-height: 75px
         &_phone 
             display: block
             margin-top: 10px
@@ -156,14 +159,12 @@
             text-align: center
         &_btn 
             display: block
-            height: 40px
             width: 200px
             margin: 0 auto
             margin-top: 10px
-            color: #ffffff
-            font-size: 16px
+            font-size: 14px
             font-weight: 400
-            text-align: center
+            padding: 0
             text-transform: uppercase
     .promo
         &_header
@@ -198,7 +199,7 @@
     .subheader
         &_logo
             img 
-                max-height: 40px 
+                max-height: 50px 
         top: 50px
         height: 60px
         &_official
@@ -218,9 +219,8 @@
             text-align: center
             text-transform: uppercase 
             margin-top: 6px 
-            &:hover 
-                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
-
+            padding: 0
+           
     .promo 
         min-height: 400px
         padding: 93px 0 35px
