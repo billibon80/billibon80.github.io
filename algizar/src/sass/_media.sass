@@ -48,9 +48,6 @@
             align-items: center
         &_descr
             margin-top: 20px
-    .mobile
-        &_item
-            width: 100% 
     .footer
         min-height: 245px
         &_wrapper
@@ -261,6 +258,8 @@
                 font-size: 16px
     .mobile
         padding: 36px 0  24px
+        &_item 
+            width: 100%
     .choice
         position: relative
         margin-top: 24px
@@ -296,11 +295,16 @@
                 font-size: 15px
         &_descr 
             font-size: 15px
+            &:last-child
+                margin-bottom: 25px
     .world
         min-height: 360px
         &_wrapper
             width: 100%
             padding: 25px 0 30px
+        &_slider
+            &_slides
+                margin: 0 5px
     .footer
         &_wrapper
             max-width: 100%
