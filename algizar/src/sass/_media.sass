@@ -169,7 +169,6 @@
     .choice
         &_wrapper
             img
-                width: 100%
                 top: 376px
     .footer
         &_wrapper
@@ -270,9 +269,9 @@
             .title, .subtitle
                 display: none
             img
-                width: 300px
                 height: 190px
                 top: 84px
+                object-fit: contain
         &_tagline
             width: 249px
             margin: 0
@@ -299,10 +298,16 @@
                 margin-bottom: 25px
     .world
         min-height: 360px
+        .container 
+            & > img 
+                width: 100%
+                height: 100%
+                object-fit: cover
         &_wrapper
             width: 100%
             padding: 25px 0 30px
         &_slider
+            top: 50%
             &_slides
                 margin: 0 5px
     .footer
