@@ -189,6 +189,15 @@ ul
 		@for $i from 1 to 7 
 			&_bg_#{$i}
 				background: url("../img/bg/mobile_bg_#{$i}.png") center center/cover no-repeat  
+				&:before
+					content: ""
+					display: block
+					height: 100%
+					position: absolute
+					width: 100%
+					top: 0
+					z-index: 0
+					background: linear-gradient(45deg, #000000, transparent)
 		&_subtitle
 			color: #ffffff
 			font-size: 24px
@@ -197,6 +206,7 @@ ul
 			text-align: center
 			text-transform: uppercase
 			padding: 0 5px
+			z-index: 1
 		&_plus
 			position: absolute
 			top: 219px
@@ -367,7 +377,7 @@ ul
 				width: 200px
 				height: 150px
 				overflow: hidden
-				background: #eeeeeebd
+				background: rgb(145 145 148)
 				transform-origin: center center
 				transform: scale(1)
 				transition: transform 0.5s
@@ -376,8 +386,12 @@ ul
 				justify-content: center
 				align-items: center
 				font-size: 14px
+				padding: 5px
+				border-right: 1px solid #eeeeeebd
 				&:first-child > img, &:last-child > img
-					padding: 46px 20px 10px 30px	
+					padding: 46px 20px 10px 30px
+				&:last-child
+					border: 0	
 				& > img 
 					display: block
 					width: 100%
@@ -391,7 +405,7 @@ ul
 	&_wrapper
 		width: 100% 
 		min-height: 186px
-		padding: 14px 23px 29px 23px
+		padding: 50px 23px 29px 23px
 		position: relative
 		display: flex
 		justify-content: space-between
@@ -419,9 +433,7 @@ ul
 			font-weight: 700
 			position: absolute
 			left: 50%
-			transform: translate(-50%, 20%)
-
-			
+			transform: translate(-50%, 20%)		
 	&_menu
 		text-align: center
 		&:before
@@ -462,24 +474,19 @@ ul
 				font-weight: 300
 				text-align: center
 				text-transform: uppercase
-		&_link 
-			font-size: 11px
-			color: #1fbad6
-			font-weight: 400
-			margin-top: 19px
+		&_subheader 
+			color: black
+			width: 300px
 			text-align: center
+			margin: 0 auto
+			margin-top: 35px
 			text-transform: uppercase
+			opacity: .5
 	&_right
-		li
-			display: block
-			height: 32px
-			width: 84px
-			background-color: black
-			border-radius: 5px
-		&_img 
-			height: 100%
-			width: 100%
-			object-fit: cover
+		display: flex
+		align-items: center
+		margin: 0
+		color: #404040
 
 .xs
 	&-hidden 
