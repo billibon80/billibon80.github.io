@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-6 col-md-3 col-xl-2">
                         <a href="tel:+375290000000" class="xs-visible subheader_phone">+ 375 29 622 41 12</a>
-                        <button type="button" class="btn btn-outline-info subheader_btn">Консультация</button>
+                        <button type="button" class="btn btn-outline-info subheader_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Консультация</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                         Выполняют производство работ "под ключ" от стадии проектирования до стадии ввода объектов
                         в эксплуатацию. 
                     </div>
-                    <button type="button" class="btn btn-outline-info promo_btn">Получить консультацию</button>
+                    <button type="button" class="btn btn-outline-info promo_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Получить консультацию</button>
                 </div>
             </div>
         </div>
@@ -106,7 +106,6 @@
                 </div>
                 <div class="col-md-6">
                     <div class="work_content">
-                        <!-- <div class="work_icon"><img src="./icons/money.png" alt="money"> </div> -->
                         <div class="work_icon"><img src="./icons/calendar.png" alt="calendar"></div>
                         <div class="work_descr">
                             <span>Четкие сроки выполнения работ.
@@ -383,8 +382,39 @@
             </div>  
         </div>       
     </footer>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Консультация</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Для получения более подробной информации по услугам компании Альгизар,
+            Вы можете связаться с нашими специалистами 
+            в чате 
+            <i class="fa-regular fa-comment"></i>
+            по телефону 
+            <i class="fa-solid fa-square-phone"></i> 
+            <a href="tel:+375296224112" class="subheader_phone dark"> + 375 29 622 41 12 </a>
+            или просто отправить email на адрес электронной почты
+            <i class="fa-solid fa-envelope"></i> 
+            <a href="mailto:algizar@mail.ru" class="subheader_phone dark"> algizar@mail.ru </a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-info subheader_btn" data-bs-dismiss="modal">Понятно</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- bootstrap  -->
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/1ce1f5ff05.js" crossorigin="anonymous"></script>    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="js/script.js"></script>
+    <!-- corusel js -->
+    <script src="js/script.js" crossorigin="anonymous"></script>
     <!-- jivo chat -->
     <script src="//code.jivosite.com/widget/yOW3DIWaOj" async></script>
 </body>
