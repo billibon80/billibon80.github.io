@@ -182,6 +182,8 @@ ul
 	padding: 48px 0 80px 0
 	.row 
 		margin-top: 13px
+		& > div 
+			position: relative
 	&_item
 		position: relative
 		width: 320px
@@ -192,6 +194,7 @@ ul
 		flex-direction: column
 		justify-content: space-between
 		margin-top: 19px
+		transition: 1s opacity
 		@for $i from 1 to 7 
 			&_bg_#{$i}
 				background: url("../img/bg/mobile_bg_#{$i}.png") center center/cover no-repeat  
@@ -506,4 +509,52 @@ ul
 		display: contents
 		font-size: 18px
 		font-weight: 700
-		
+
+particle
+	position: fixed
+	top: 0
+	left: 0
+	opacity: 0
+	pointer-events: none
+	background-repeat: no-repeat
+	background-size: contain
+
+.box
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+	height: 80%
+	width: 80%
+	opacity: 0
+	transition: 1.8s all
+	position: absolute
+	top: 14%
+	left: 50%
+	transform: translate(-50%)
+	padding: 15px
+	background-color: #424867
+	color: white
+	&_descr 
+		display: flex
+		align-items: center
+		overflow: hidden
+		height: 100%
+		line-height: 100%
+		text-align: center
+
+	&_vissible 
+		// display: block
+		opacity: 1
+		z-index: 1
+	&_end 
+		opacity: 0
+		transition: .8s all
+	&_btn-right
+		position: absolute
+		top: 0
+		right: 0
+		color: white
+		background-color: #424867
+		border: 0
+		font-size: 25px
+		&:focus 
+			box-shadow: none
+			
